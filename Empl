@@ -1,0 +1,42 @@
+class Employee
+{
+    String name, address;
+    int year, salary;
+    Employee(int y, int sal, String n, String add)
+    {
+        year = y;
+        salary = sal;
+        name = n;
+        address = add;
+    }
+    public String get_name()
+    {
+        return name;
+    }
+    public int get_year()
+    {
+        return year;
+    }
+    public int get_salary()
+    {
+        return salary;
+    }
+    public String get_address()
+    {
+        return address;
+    }
+}
+
+public class Empl
+{
+    public static void main(String[] args)
+    {
+        Employee e1 = new Employee(2001, 100000, "Manshi", "23 Saltlake");
+        Employee e2 = new Employee(1976, 5000000, "Aditya", "65 MG Road");
+        Employee e3 = new Employee( 2000, 20000, "Shreyansh","32 BB Ganguly Street");
+        System.out.println("Name\t\tYear of joining\t\tSalary\t\tAddress");
+        System.out.println(e1.get_name()+"\t\t"+e1.get_year()+"\t\t\t"+e1.get_salary()+"\t\t"+e1.get_address());  
+        System.out.println(e2.get_name()+"\t\t"+e2.get_year()+"\t\t\t"+e2.get_salary()+"\t\t"+e2.get_address()); 
+        System.out.println(e3.get_name()+"\t"+e3.get_year()+"\t\t\t"+e3.get_salary()+"\t\t"+e3.get_address());  
+    }
+}
