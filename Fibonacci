@@ -1,0 +1,19 @@
+import java.util.*;
+public class Fibonacci 
+{
+    public static void main(String[] args) 
+    {
+        int num, f1, f2 = 0, f3 = 1 ;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number of terms ");
+        num = s.nextInt();
+        System.out.print("Fibonacci Series ");
+        for(int i = 1; i <= num; i++)
+        {
+            f1 = f2;
+            f2 = f3;
+            f3 = f1 + f2;
+            System.out.print(f1+" ");
+        }
+    }
+}
